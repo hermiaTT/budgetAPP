@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Budgets App</h1>
+
+        <div class="control">
+          <div class="flex info">
+            <h3>Total Balance</h3>
+            <h2 class="number pos" id="totalAmount">0</h2>
+            <!-- <h2 class="number neg" id="totalAmount">3,000</h2> -->
+          </div>
+          <div class="flex fields">
+            <input type="number" id="incomeAmount" />
+            <button class="addIncome">Income</button>
+          </div>
+          <div class="flex fields">
+            <input type="number" id="expenseAmount" />
+            <button class="addExpense">Expense</button>
+          </div>
+        </div>
+
+        <!-- Budget Filter -->
+        <div class="filter">
+          <span id="filter-all" class="active">All</span>
+          <span id="filter-income">Income</span>
+          <span id="filter-expense">Expense</span>
+        </div>
+
+        <!-- Budget List -->
+        <div class="list">
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
